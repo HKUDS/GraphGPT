@@ -1,4 +1,6 @@
-# <img src="images/graphgpt.png" style="width: 10%"> GraphGPT: Graph Instruction Tuning for Large Language Models
+# <center><img src="images/graphgpt.png" style="width: 10%"> GraphGPT: Graph Instruction Tuning or Large Language Models</center>
+
+
 [Jiabin Tang](https://tjb-tech.github.io/), [Yuhao Yang](http://yuh-yang.github.io), [Wei Wei](#), [Lei Shi](#), [Lixin Su](#), [Suqi Cheng](#), [Dawei Yin](https://www.yindawei.com/) and [Chao Huang](https://sites.google.com/view/chaoh/home)*.
 (*Correspondence )
 
