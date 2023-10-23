@@ -10,7 +10,7 @@
 
 <a href='https://graphgpt.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
-<a href='#'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+<a href='https://arxiv.org/abs/2310.13023'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](#)
 
 
@@ -19,6 +19,8 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 -----------
 
 ## 🎉 News 
+
+- [x] [2023.10.23] 🚀🚀 The full paper of our GraphGPT is available at [https://arxiv.org/abs/2310.13023](https://arxiv.org/abs/2310.13023). Please check out it and give us more feedbacks! 
 
 - [x] [2023.10.15] 🚀🚀 Release the code of GraphGPT.
 
@@ -392,12 +394,14 @@ For any questions or feedback, feel free to contact [Jiabin Tang](mailto:jiabint
 ## Citation
 
 If you find GraphGPT useful in your research or applications, please kindly cite:
-```
+```tex
 @articles{tang2023graphgpt,
-  title={GraphGPT: Graph Instruction Tuning for Large Language Models},
-  author={Jiabin Tang, Yuhao Yang, Wei Wei, Lei Shi, Lixin Su, Suqi Cheng, Dawei Yin, Chao Huang},
-  journal = {arXiv preprint},
-  year={2023}
+title={GraphGPT: Graph Instruction Tuning for Large Language Models}, 
+author={Jiabin Tang and Yuhao Yang and Wei Wei and Lei Shi and Lixin Su and Suqi Cheng and Dawei Yin and Chao Huang},
+year={2023},
+eprint={2310.13023},
+archivePrefix={arXiv},
+primaryClass={cs.CL}
 }
 ```
 
