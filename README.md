@@ -78,7 +78,7 @@ For more technical details, kindly refer to the [paper]() and the project [websi
 
 <span id='Code Structure'/>
 
-### 1. Code Structure 
+### 1. Code Structure <a href='#all_catelogue'>[Back to Top]</a>
 
 ```
 .
@@ -212,9 +212,9 @@ pip install -r requirements.txt
 
 <span id='Training GraphGPT'/>
 
-### 3. Training GraphGPT 
+### 3. Training GraphGPT <a href='#all_catelogue'>[Back to Top]</a>
 
-GraphGPT tuning paradigm consists of two stages: (1) self-supervised instruction tuning: use approximately 600K filtered CC3M to connect a *frozen pretrained* vision encoder to a *frozen LLM*; (2) task-specific instruction tuning: use 150K GPT-generated multimodal instruction-following to teach the model to follow multimodal instructions.
+GraphGPT tuning paradigm consists of two stages: (1) self-supervised instruction tuning; (2) task-specific instruction tuning.
 
 <span id='Prepare Pre-trained Checkpoint'/>
 
@@ -361,14 +361,14 @@ python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_port=2000
 <span id='Preparing Checkpoints and Data'/>
 
 
-#### 4.1. Preparing Checkpoints and Data
+#### 4.1. Preparing Checkpoints and Data <a href='#all_catelogue'>[Back to Top]</a>
 
 * **Checkpoints:** You could try to evaluate GraphGPT by using your own model or our released checkpoints.
 * **Data:** We split test sets for different graph datasets and make the instruction data for evaluation. Please refer to the  [evaluating](https://huggingface.co/datasets/Jiabin99/evaluating).
 
 <span id='Running Evaluation'/>
 
-#### 4.2. Running Evaluation
+#### 4.2. Running Evaluation <a href='#all_catelogue'>[Back to Top]</a>
 
 You could start the second stage tuning by filling blanks at [graphgpt_eval.sh](https://github.com/HKUDS/GraphGPT/scripts/eval_script/graphgpt_eval.sh). There is an example as below: 
 ```shell
