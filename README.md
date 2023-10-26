@@ -40,8 +40,6 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 
 
 ## 👉 TODO 
-- [ ] Release our utilized Instruction data.
-- [ ] Release checkpoints of our GraphGPT and pre-trained graph encoder.
 - [ ] Exploring the potential of our GraphGPT for more graph learning tasks.
 - [ ] ...
 
