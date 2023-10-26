@@ -20,6 +20,20 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 
 ## 🎉 News 
 
+📢📢 We have made significant updates to the **models** and **data** used in our GraphGPT on 🤗 **Huggingface**. We highly recommend referring to the table below for further details: 
+
+| 🤗 Huggingface Address                                        | 🎯 Description                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [huggingface.co/Jiabin99/GraphGPT-7B-mix-all](https://huggingface.co/Jiabin99/GraphGPT-7B-mix-all) | It's the checkpoint of our GraphGPT based on Vicuna-7B-v1.5 tuned on instruction data [Arxiv-PubMed-mix-NC-LP](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP) |
+| [huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) | It's the checkpoint of the pre-trained graph transformer (GT) trained on Arxiv and PubMed using Text-Graph grounding. |
+| [huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP) | This's the mixing instruction dataset with node classification (NC) and link prediction (LP) on Arxiv and PubMed. |
+| [huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction](https://huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction) | We release all instruction dataset for our evaluation.       |
+| [huggingface.co/datasets/Jiabin99/All_pyg_graph_data](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) | We merge all utilized graph data.                            |
+
+- [x] [2023.10.26]🔥🔥Release our utilized Instruction data.
+
+- [x] [2023.10.26]🔥🔥Release checkpoints of our GraphGPT and pre-trained graph encoder.
+
 - [x] [2023.10.23] 🚀🚀 The full paper of our GraphGPT is available at [https://arxiv.org/abs/2310.13023](https://arxiv.org/abs/2310.13023). Please check out it and give us more feedbacks! 
 
 - [x] [2023.10.15] 🚀🚀 Release the code of GraphGPT.
@@ -410,4 +424,8 @@ primaryClass={cs.CL}
 ## Acknowledgements
 You may refer to related work that serves as foundations for our framework and code repository, 
 [Vicuna](https://github.com/lm-sys/FastChat), [LLaVa](https://github.com/haotian-liu/LLaVA), We also partially draw inspirations from [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4). The design of our website and README.md was inspired by [NExT-GPT](https://next-gpt.github.io/). Thanks for their wonderful works.
+
+
+
+
 
