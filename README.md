@@ -30,6 +30,8 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 | [huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction](https://huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction) | We release all instruction dataset for our evaluation.       |
 | [huggingface.co/datasets/Jiabin99/All_pyg_graph_data](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) | We merge all utilized graph data.                            |
 
+- [x] [2023.10.28]📢📢For the Chinese version of the explanation, please refer to this [article](https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw).
+
 - [x] [2023.10.26]🔥🔥Release our utilized Instruction data.
 
 - [x] [2023.10.26]🔥🔥Release checkpoints of our GraphGPT and pre-trained graph encoder.
