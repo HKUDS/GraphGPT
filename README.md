@@ -29,6 +29,7 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 | [huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP) | This's the mixing instruction dataset with node classification (NC) and link prediction (LP) on Arxiv and PubMed. |
 | [huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction](https://huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction) | We release all instruction dataset for our evaluation.       |
 | [huggingface.co/datasets/Jiabin99/All_pyg_graph_data](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) | We merge all utilized graph data.                            |
+| [huggingface.co/datasets/Jiabin99/graph-matching](https://huggingface.co/datasets/Jiabin99/graph-matching) | This is the instruction data used in graph-matching stage.                            |
 
 - [x] [2023.10.28]📢📢For the Chinese version of the explanation, please refer to this [article](https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw).
 
@@ -250,7 +251,7 @@ Please follow the instructions to prepare the checkpoints.
 
 #### 3.2. Self-Supervised Instruction Tuning  <a href='#all_catelogue'>[Back to Top]</a>
 
-* **Prepare data:** Please download our instruction tuning data [graph_matching.json](https://huggingface.co/datasets/Jiabin99/graph_matching) for the graph matching task.
+* **Prepare data:** Please download our instruction tuning data [graph_matching.json](https://huggingface.co/datasets/Jiabin99/graph-matching) for the graph matching task.
 
 * **Start tuning:** After the aforementioned steps, you could start the first stage tuning by filling blanks at [graphgpt_stage1.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/graphgpt_stage1.sh). There is an example as below: 
 
@@ -316,7 +317,7 @@ python3.8 ./scripts/extract_graph_projector.py \
 
 #### 3.4. Task-Specific Instruction Tuning  <a href='#all_catelogue'>[Back to Top]</a>
 
-* **Prepare data:** The choices of our task-specific instruction data could be diverse, e.g., standard or COT (Chain-of-Thought) node classifiction, link prediction or mixing data for multitasking. Please refer to the  [task_specific](https://huggingface.co/datasets/Jiabin99/task_specific).
+* **Prepare data:** The choices of our task-specific instruction data could be diverse, e.g., standard or COT (Chain-of-Thought) node classifiction, link prediction or mixing data for multitasking. Please refer to the  [task_specific](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP).
 
 * **Start tuning:** After the aforementioned steps, you could start the second stage tuning by filling blanks at [graphgpt_stage2.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/graphgpt_stage2.sh). There is an example as below: 
 
@@ -378,7 +379,7 @@ python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_port=2000
 #### 4.1. Preparing Checkpoints and Data <a href='#all_catelogue'>[Back to Top]</a>
 
 * **Checkpoints:** You could try to evaluate GraphGPT by using your own model or our released checkpoints.
-* **Data:** We split test sets for different graph datasets and make the instruction data for evaluation. Please refer to the  [evaluating](https://huggingface.co/datasets/Jiabin99/evaluating).
+* **Data:** We split test sets for different graph datasets and make the instruction data for evaluation. Please refer to the  [evaluating](https://huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction).
 
 <span id='Running Evaluation'/>
 
