@@ -317,7 +317,7 @@ python3.8 ./scripts/extract_graph_projector.py \
 
 #### 3.4. Task-Specific Instruction Tuning  <a href='#all_catelogue'>[Back to Top]</a>
 
-* **Prepare data:** The choices of our task-specific instruction data could be diverse, e.g., standard or COT (Chain-of-Thought) node classifiction, link prediction or mixing data for multitasking. Please refer to the  [task_specific](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP).
+* **Prepare data:** The choices of our task-specific instruction data could be diverse, e.g., standard or COT (Chain-of-Thought) node classification, link prediction or mixing data for multitasking. Please refer to the  [task_specific](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP).
 
 * **Start tuning:** After the aforementioned steps, you could start the second stage tuning by filling blanks at [graphgpt_stage2.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/graphgpt_stage2.sh). There is an example as below: 
 
