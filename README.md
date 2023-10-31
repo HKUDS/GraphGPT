@@ -241,11 +241,11 @@ Please follow the instructions to prepare the checkpoints.
   Prepare our base model Vicuna, which is an instruction-tuned chatbot and base model in our implementation. Please download its weights [here](https://github.com/lm-sys/FastChat#model-weights). We generally utilize v1.1 and v1.5 model with 7B parameters.
 
 - `Graph Encoder`:
-  is used to encode graph structures. We empoly text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer]() and put it at [[./GraphGPT]](./GraphGPT)
+  is used to encode graph structures. We empoly text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) and put it at [[./GraphGPT]](./GraphGPT)
 
 - `Graph Data`: 
 
-  is a combination of all utilized pyg graph data that contain node features, edge_index and son on. You can download by [all_graph_data.pt]() and put it at [[./GraphGPT/graph_data]](./GraphGPT/graph_data)
+  is a combination of all utilized pyg graph data that contain node features, edge_index and son on. You can download by [all_graph_data.pt](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) and put it at [[./GraphGPT/graph_data]](./GraphGPT/graph_data)
 
 <span id='Self-Supervised Instruction Tuning'/>
 
