@@ -224,7 +224,7 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 # Clone our GraphGPT
 git clone https://github.com/HKUDS/GraphGPT.git
 cd GraphGPT
-# Install required libaries
+# Install required libraries
 pip install -r requirements.txt
 ```
 
@@ -306,7 +306,7 @@ python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_port=2000
 We could extract the trained projector in the stage 1 by filling blanks at [extract_projector.sh](scripts/tune_script/extract_projector.sh). There is an example as below: 
 
 ```shell
-# to fill in the following path to extract projector for the second tuning stage!
+# to fill in the following path to extract projector for the first tuning stage!
 src_model=./checkpoints/stage_1
 output_proj=./checkpoints/stage_1_projector/stage_1_projector.bin
 
