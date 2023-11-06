@@ -180,11 +180,11 @@ toml==0.10.2
 tomli==2.0.1
 toolz
 # torch==1.13.0
-torch-cluster==1.6.1
-torch-geometric==2.3.1
-torch-scatter==2.1.0
-torch-sparse==0.6.16
-torch-spline-conv==1.2.2
+# torch-cluster==1.6.1
+# torch-geometric==2.3.1
+# torch-scatter==2.1.0
+# torch-sparse==0.6.16
+# torch-spline-conv==1.2.2
 # torchvision==0.14.0
 tornado==6.1
 tqdm
