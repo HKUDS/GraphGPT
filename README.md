@@ -64,7 +64,7 @@ we present the **GraphGPT** framework that aligns LLMs with graph structural kno
 - **Chain-of-Thought (CoT) Distillation.** When faced with diverse graph data, language models may encounter new or unfamiliar patterns and structures. This distribution shift can pose challenges in generating accurate and coherent responses, especially when the number of node classes varies across different types of graph data. To address this challenge and boost accuracy in the presence of distribution shift, it is essential to equip our GraphGPT with step-by-step reasoning abilities. In this regard, we propose utilizing the Chain-of-Thought (COT) technique [47], which explicitly models the flow of thoughts and reasoning steps. By incorporating COT, our language model improves the coherence and consistency of generated text. It enables the model to follow a logical progression of ideas, enhancing its ability to understand and reason about the given graph data.
 
 
-For more technical details, kindly refer to the [paper]() and the project [website](https://graphgpt.github.io/) of our Graph. 
+For more technical details, kindly refer to the [paper](https://arxiv.org/abs/2310.13023) and the project [website](https://graphgpt.github.io/) of our Graph. 
 
 
 -----------
