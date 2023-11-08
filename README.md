@@ -244,7 +244,7 @@ Please follow the instructions to prepare the checkpoints.
   Prepare our base model Vicuna, which is an instruction-tuned chatbot and base model in our implementation. Please download its weights [here](https://github.com/lm-sys/FastChat#model-weights). We generally utilize v1.1 and v1.5 model with 7B parameters.
 
 - `Graph Encoder`:
-  is used to encode graph structures. We employ text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) and put it at [[./GraphGPT]](./GraphGPT)
+  is used to encode graph structures. We employ text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) and put it at [[./GraphGPT]](./GraphGPT). We also provide source codes and example Cora data for text-graph grounding at [[./text-graph-grounding]](./text-graph-grounding) for your reference.
 
 - `Graph Data`:
   is a combination of all utilized pyg graph data that contain node features, edge_index and so on. You can download by [all_graph_data.pt](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) and put it at [[./GraphGPT/graph_data]](./GraphGPT/graph_data)
@@ -426,7 +426,7 @@ primaryClass={cs.CL}
 
 ## Acknowledgements
 You may refer to related work that serves as foundations for our framework and code repository, 
-[Vicuna](https://github.com/lm-sys/FastChat), [LLaVa](https://github.com/haotian-liu/LLaVA), We also partially draw inspirations from [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4). The design of our website and README.md was inspired by [NExT-GPT](https://next-gpt.github.io/). Thanks for their wonderful works.
+[Vicuna](https://github.com/lm-sys/FastChat), [LLaVa](https://github.com/haotian-liu/LLaVA), We also partially draw inspirations from [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4). For the text-graph grounding design, we leverages implementation from [G2P2](https://github.com/WenZhihao666/G2P2). The design of our website and README.md was inspired by [NExT-GPT](https://next-gpt.github.io/). Thanks for their wonderful works.
 
 
 
