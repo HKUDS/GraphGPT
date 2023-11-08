@@ -64,7 +64,7 @@ we present the **GraphGPT** framework that aligns LLMs with graph structural kno
 - **Chain-of-Thought (CoT) Distillation.** When faced with diverse graph data, language models may encounter new or unfamiliar patterns and structures. This distribution shift can pose challenges in generating accurate and coherent responses, especially when the number of node classes varies across different types of graph data. To address this challenge and boost accuracy in the presence of distribution shift, it is essential to equip our GraphGPT with step-by-step reasoning abilities. In this regard, we propose utilizing the Chain-of-Thought (COT) technique [47], which explicitly models the flow of thoughts and reasoning steps. By incorporating COT, our language model improves the coherence and consistency of generated text. It enables the model to follow a logical progression of ideas, enhancing its ability to understand and reason about the given graph data.
 
 
-For more technical details, kindly refer to the [paper]() and the project [website](https://graphgpt.github.io/) of our Graph. 
+For more technical details, kindly refer to the [paper](https://arxiv.org/abs/2310.13023) and the project [website](https://graphgpt.github.io/) of our Graph. 
 
 
 -----------
@@ -224,7 +224,7 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 # Clone our GraphGPT
 git clone https://github.com/HKUDS/GraphGPT.git
 cd GraphGPT
-# Install required libaries
+# Install required libraries
 pip install -r requirements.txt
 ```
 
@@ -244,11 +244,10 @@ Please follow the instructions to prepare the checkpoints.
   Prepare our base model Vicuna, which is an instruction-tuned chatbot and base model in our implementation. Please download its weights [here](https://github.com/lm-sys/FastChat#model-weights). We generally utilize v1.1 and v1.5 model with 7B parameters.
 
 - `Graph Encoder`:
-  is used to encode graph structures. We empoly text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) and put it at [[./GraphGPT]](./GraphGPT)
+  is used to encode graph structures. We employ text-graph grounding approach to obtain the pre-trained graph transformer model, which you could download by [graph transformer](https://huggingface.co/Jiabin99/Arxiv-PubMed-GraphCLIP-GT) and put it at [[./GraphGPT]](./GraphGPT)
 
-- `Graph Data`: 
-
-  is a combination of all utilized pyg graph data that contain node features, edge_index and son on. You can download by [all_graph_data.pt](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) and put it at [[./GraphGPT/graph_data]](./GraphGPT/graph_data)
+- `Graph Data`:
+  is a combination of all utilized pyg graph data that contain node features, edge_index and so on. You can download by [all_graph_data.pt](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) and put it at [[./GraphGPT/graph_data]](./GraphGPT/graph_data)
 
 <span id='Self-Supervised Instruction Tuning'/>
 
@@ -256,7 +255,7 @@ Please follow the instructions to prepare the checkpoints.
 
 * **Prepare data:** Please download our instruction tuning data [graph_matching.json](https://huggingface.co/datasets/Jiabin99/graph-matching) for the graph matching task.
 
-* **Start tuning:** After the aforementioned steps, you could start the first stage tuning by filling blanks at [graphgpt_stage1.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/graphgpt_stage1.sh). There is an example as below: 
+* **Start tuning:** After the aforementioned steps, you could start the first stage tuning by filling blanks at [graphgpt_stage1.sh](scripts/tune_script/graphgpt_stage1.sh). There is an example as below: 
 
 ```shell
 # to fill in the following path to run the first stage of our GraphGPT!
@@ -304,10 +303,10 @@ python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_port=2000
 
 #### 3.3. Extract the Trained Projector  <a href='#all_catelogue'>[Back to Top]</a>
 
-We could extract the trained projector in the stage 1 by filling blanks at [extract_projector.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/extract_projector.sh). There is an example as below: 
+We could extract the trained projector in the stage 1 by filling blanks at [extract_projector.sh](scripts/tune_script/extract_projector.sh). There is an example as below: 
 
 ```shell
-# to fill in the following path to extract projector for the second tuning stage!
+# to fill in the following path to extract projector for the first tuning stage!
 src_model=./checkpoints/stage_1
 output_proj=./checkpoints/stage_1_projector/stage_1_projector.bin
 
@@ -322,7 +321,7 @@ python3.8 ./scripts/extract_graph_projector.py \
 
 * **Prepare data:** The choices of our task-specific instruction data could be diverse, e.g., standard or COT (Chain-of-Thought) node classification, link prediction or mixing data for multitasking. Please refer to the  [task_specific](https://huggingface.co/datasets/Jiabin99/Arxiv-PubMed-mix-NC-LP).
 
-* **Start tuning:** After the aforementioned steps, you could start the second stage tuning by filling blanks at [graphgpt_stage2.sh](https://github.com/HKUDS/GraphGPT/scripts/tune_script/graphgpt_stage2.sh). There is an example as below: 
+* **Start tuning:** After the aforementioned steps, you could start the second stage tuning by filling blanks at [graphgpt_stage2.sh](scripts/tune_script/graphgpt_stage2.sh). There is an example as below: 
 
 ```shell
 # to fill in the following path to run the second stage of our GraphGPT!
@@ -388,7 +387,7 @@ python -m torch.distributed.run --nnodes=1 --nproc_per_node=4 --master_port=2000
 
 #### 4.2. Running Evaluation <a href='#all_catelogue'>[Back to Top]</a>
 
-You could start the second stage tuning by filling blanks at [graphgpt_eval.sh](https://github.com/HKUDS/GraphGPT/scripts/eval_script/graphgpt_eval.sh). There is an example as below: 
+You could start the second stage tuning by filling blanks at [graphgpt_eval.sh](scripts/eval_script/graphgpt_eval.sh). There is an example as below: 
 ```shell
 # to fill in the following path to extract projector for the second tuning stage!
 output_model=./checkpoints/stage_2
