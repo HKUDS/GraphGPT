@@ -12,6 +12,7 @@
 <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
 <a href='https://arxiv.org/abs/2310.13023'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](#)
+ • 🌐 <a href="[https://zhuanlan.zhihu.com/p/639494251](https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw)" target="_blank">中文博客</a>
 
 
 This repository hosts the code, data and model weight of **GraphGPT**.
