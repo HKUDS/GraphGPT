@@ -20,8 +20,19 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 -----------
 
 ## 🎉 News 
+- [x] [2023.12.14]📢📢Thank you for the support from the research community. We have compiled a list of frequently asked questions (FAQs) regarding running and environment issues in the following **FAQ** list. Please take a look. Wishing everyone an early Merry Christmas!🎄🎄
 
-📢📢 We have made significant updates to the **models** and **data** used in our GraphGPT on 🤗 **Huggingface**. We highly recommend referring to the table below for further details: 
+<details>
+<summary> <b>FQA</b> </summary>
+
+- For 'pretrain_graph_model_path' is not defined. Please refer to issue [#7](https://github.com/HKUDS/GraphGPT/issues/7).
+- If there is something wrong for you to use flash attetion, just comment the `replace_llama_attn_with_flash_attn()` in line 8 in https://github.com/HKUDS/GraphGPT/blob/main/graphgpt/train/train_mem.py. For more details, please refer to [#17](https://github.com/HKUDS/GraphGPT/issues/17)
+- If you meet some error about package conflict or environment setup (especially fastchat), please refer to issue [#9](https://github.com/HKUDS/GraphGPT/issues/9) and issue [#11](https://github.com/HKUDS/GraphGPT/issues/11).
+
+</details>
+
+
+🎯🎯📢📢 We have made significant updates to the **models** and **data** used in our GraphGPT on 🤗 **Huggingface**. We highly recommend referring to the table below for further details: 
 
 | 🤗 Huggingface Address                                        | 🎯 Description                                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -31,6 +42,7 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 | [huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction](https://huggingface.co/datasets/Jiabin99/GraphGPT-eval-instruction) | We release all instruction dataset for our evaluation.       |
 | [huggingface.co/datasets/Jiabin99/All_pyg_graph_data](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data) | We merge all utilized graph data.                            |
 | [huggingface.co/datasets/Jiabin99/graph-matching](https://huggingface.co/datasets/Jiabin99/graph-matching) | This is the instruction data used in graph-matching stage.                            |
+
 
 - [x] [2023.10.28]📢📢For the Chinese version of the explanation, please refer to this [article](https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw).
 
