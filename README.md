@@ -20,6 +20,51 @@ This repository hosts the code, data and model weight of **GraphGPT**.
 -----------
 
 ## 🎉 News 
+
+- [x] [2023.12.26]🎯🎯📢📢We have updated the efficient and lightweight training code. With the updated script, it is possible to perform two-stage instruction tuning on two Nvidia 3090 GPUs (24 GB each). The specific deployment and fine-tuning methods are as follows: 🎄🎄
+
+#### 0. Environment Update: 
+
+The lightweight training requires PyTorch 2.1+, so we need to update corresponding libraries: 
+
+```shell
+# if you have set up the env for GraphGPT earlier
+pip uninstall torch
+pip uninstall torchvision
+pip uninstall torchaudio
+# CUDA 11.8
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+
+# update pyg for the PyTorch 2.1+
+pip install torch_geometric
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.0+cu118.html
+
+# install lightning
+pip install lightning
+```
+
+#### 1. Update the Graph Data
+
+Due to compatibility issues, if you are using the previously released graph data, we recommend downloading and updating it according to the provided link: [updated graph data](https://huggingface.co/datasets/Jiabin99/All_pyg_graph_data).
+
+#### 2. Run the Scripts
+
+You can run the scripts as follow:
+
+**Stage-1: **
+
+```shell
+cd path/to/GraphGPT
+sh ./scripts/tune_script/graphgpt_stage1.sh
+```
+
+**Stage-2: **
+
+```
+cd path/to/GraphGPT
+sh ./scripts/tune_script/graphgpt_stage2.sh
+```
+
 - [x] [2023.12.14]📢📢Thank you for the support from the research community. We have compiled a list of frequently asked questions (FAQs) regarding running and environment issues in the following **FAQ** list. Please take a look. Wishing everyone an early Merry Christmas!🎄🎄
 
 <details>
