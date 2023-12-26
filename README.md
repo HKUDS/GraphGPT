@@ -51,14 +51,14 @@ Due to compatibility issues, if you are using the previously released graph data
 
 You can run the scripts as follow:
 
-**Stage-1: **
+**Stage-1:**
 
 ```shell
 cd path/to/GraphGPT
 sh ./scripts/tune_script/graphgpt_stage1.sh
 ```
 
-**Stage-2: **
+**Stage-2:**
 
 ```
 cd path/to/GraphGPT
