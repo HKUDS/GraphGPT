@@ -268,7 +268,7 @@ For more technical details, kindly refer to the [paper](https://arxiv.org/abs/23
 ### 2. Environment Preparation  <a href='#all_catelogue'>[Back to Top]</a>
 Please first clone the repo and install the required environment, which can be done by running the following commands:
 ```shell
-conda env create -n graphgpt python=3.8
+conda create -n graphgpt python=3.8
 
 conda activate graphgpt
 
