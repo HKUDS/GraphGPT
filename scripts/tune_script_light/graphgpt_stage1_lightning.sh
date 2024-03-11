@@ -5,7 +5,7 @@ graph_data_path=
 pretra_gnn=
 output_model=
 
-python graphchat/train/train_light.py \
+python graphgpt/train/train_light.py \
     --model_name_or_path ${model_path} \
     --version v1 \
     --data_path ${instruct_ds} \
