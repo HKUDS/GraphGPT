@@ -320,7 +320,7 @@ Please follow the instructions to prepare the checkpoints.
 model_path=../vicuna-7b-v1.5-16k
 instruct_ds=./data/stage_1/graph_matching.json
 graph_data_path=./graph_data/all_graph_data.pt
-pretra_gnn=./clip_gt_arxiv
+pretra_gnn=clip_gt_arxiv
 output_model=./checkpoints/stage_1
 
 wandb offline
@@ -386,7 +386,7 @@ python3.8 ./scripts/extract_graph_projector.py \
 model_path=../vicuna-7b-v1.5-16k
 instruct_ds=./data/stage_2/data_all_mix.json
 graph_data_path=./graph_data/all_graph_data.pt
-pretra_gnn=./clip_gt_arxiv
+pretra_gnn=clip_gt_arxiv
 tuned_proj=./checkpoints/stage_1_projector/stage_1_projector.bin
 output_model=./checkpoints/stage_2
 
