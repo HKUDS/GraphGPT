@@ -15,12 +15,12 @@
  • 🌐 <a href="https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw" target="_blank">中文博客</a>
 
 
-This repository hosts the code, data and model weight of **GraphGPT**.
+This repository hosts the code, data and model weight of **GraphGPT** (SIGIR'24 full paper track).
 
 -----------
 
 ## 🎉 News 
-
+- [x] [2024.03.26]🎯🎯📢📢Our GraphGPT is accepted by SIGIR'24 in the Full paper track (20.1% acceptance rate)! Congrats to all GraphGPT team! 🎉🎉🎉
 - [x] [2023.12.26]🎯🎯📢📢We have updated the efficient and lightweight training code. With the updated script, it is possible to perform two-stage instruction tuning on two Nvidia 3090 GPUs (24 GB each). The specific deployment and fine-tuning methods are as follows: 🎄🎄
 
 #### 0. Environment Update: 
