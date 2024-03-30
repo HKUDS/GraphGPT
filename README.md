@@ -73,6 +73,7 @@ sh ./scripts/tune_script/graphgpt_stage2.sh
 - For 'pretrain_graph_model_path' is not defined. Please refer to issue [#7](https://github.com/HKUDS/GraphGPT/issues/7).
 - If there is something wrong for you to use flash attetion, just comment the `replace_llama_attn_with_flash_attn()` in line 8 in https://github.com/HKUDS/GraphGPT/blob/main/graphgpt/train/train_mem.py. For more details, please refer to [#17](https://github.com/HKUDS/GraphGPT/issues/17)
 - If you meet some error about package conflict or environment setup (especially fastchat), please refer to issue [#9](https://github.com/HKUDS/GraphGPT/issues/9) and issue [#11](https://github.com/HKUDS/GraphGPT/issues/11).
+- If you meet `No module named 'graphgpt'` error, you could refer to issue [#56](https://github.com/HKUDS/GraphGPT/issues/56)
 
 </details>
 
