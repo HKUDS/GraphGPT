@@ -1,6 +1,19 @@
-# <center><img src="images/graphgpt.png" style="width: 10%"> GraphGPT: Graph Instruction Tuning for Large Language Models</center>
+# <center><img src="images/graphgpt.png" style="width: 5%"> GraphGPT: Graph Instruction Tuning for Large Language Models</center>
 
+<div align='center'>
+ <a href='https://tjb-tech.github.io/'>Jiabin Tang</a>, <a href='http://yuh-yang.github.io'>Yuhao Yang</a>, <a href='#'>Wei Wei</a>, <a href='#'>Lei Shi</a>, <a href='#'>Suqi Cheng</a>, <a href='https://www.yindawei.com/'>Dawei Yin</a> and <a='https://sites.google.com/view/chaoh/home'>Chao Huang*</a>. (*Correspondence )
 
+ <strong><a href='https://sites.google.com/view/chaoh/home'>Data Intelligence Lab</a>@<a href='https://www.hku.hk/'>University of Hong Kong</a></strong>, Baidu Inc.
+
+ <a href='https://graphgpt.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
+ <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
+ <a href='https://arxiv.org/abs/2310.13023'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+[![YouTube](https://badges.aleen42.com/src/youtube.svg)](#)
+<a href='https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw' target='_blank'><img src='https://img.shields.io/badge/中文-博客-blue'></a>
+
+<img src='images/GraphGPT_notext.jpeg' />
+
+<!--
 [Jiabin Tang](https://tjb-tech.github.io/), [Yuhao Yang](http://yuh-yang.github.io), [Wei Wei](#), [Lei Shi](#), [Lixin Su](#), [Suqi Cheng](#), [Dawei Yin](https://www.yindawei.com/) and [Chao Huang](https://sites.google.com/view/chaoh/home)*.
 (*Correspondence )
 
@@ -13,11 +26,18 @@
 <a href='https://arxiv.org/abs/2310.13023'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](#)
  • 🌐 <a href="https://mp.weixin.qq.com/s/rvKTFdCk719Q6hT09Caglw" target="_blank">中文博客</a>
+-->
+
+
 
 
 This repository hosts the code, data and model weight of **GraphGPT** (SIGIR'24 full paper track).
 
+<!--
 -----------
+-->
+
+</div>
 
 ## 🎉 News 
 - [x] [2024.03.26]🎯🎯📢📢Our GraphGPT is accepted by SIGIR'24 in the Full paper track (20.1% acceptance rate)! Congrats to all GraphGPT team! 🎉🎉🎉
