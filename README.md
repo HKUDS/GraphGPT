@@ -486,6 +486,19 @@ python3.8 ./graphgpt/eval/run_graphgpt.py --model-name ${output_model}  --prompt
 
 For any questions or feedback, feel free to contact [Jiabin Tang](mailto:jiabintang77@gmail.com).
 
+## Misc
+
+<div align="center">
+
+[![Stargazers repo roster for @HKUDS/GraphGPT](https://reporoster.com/stars/HKUDS/GraphGPT)](https://github.com/HKUDS/GraphGPT/stargazers)
+
+
+[![Forkers repo roster for @HKUDS/GraphGPT](https://reporoster.com/forks/HKUDS/GraphGPT)](https://github.com/HKUDS/GraphGPT/network/members)
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HKUDS/GraphGPT&type=Date)](https://star-history.com/#HKUDS/GraphGPT&Date)
+
+</div>
 
 ## Citation
 
